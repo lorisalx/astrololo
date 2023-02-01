@@ -11,6 +11,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.0.2"
+    "astro": "^2.0.2",
+    "astro-i18next": "1.0.0-beta.17",
+    "i18next": "^22.4.9",
+    "i18next-fs-backend": "^2.1.1",
+    "i18next-http-backend": "^2.1.1"
   }
 }
