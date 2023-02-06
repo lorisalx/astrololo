@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage, setDefaultNamespace } from "i18next";
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ContactCTA from "../components/ContactCTA.astro";
@@ -9,18 +9,19 @@ import Grid from "../components/Grid.astro";
 
 changeLanguage("en");
 
+setDefaultNamespace("work");
 const projects = (await getCollection("work")).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 ---
 
 <BaseLayout
-	title="My Work | Loris Alexandre"
-	description="Learn about Loris Alexandre's most recent projects"
+	title={t("seo.title")}
+	description={t("seo.desc")}
 >
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
 			<Hero
-				title="My Work"
-				tagline="See my most recent projects below to get an idea of my past experience."
+				title={t("hero.title")}
+				tagline={t("hero.tagline")}
 				align="start"
 			/>
 			<Grid variant="offset">

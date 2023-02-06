@@ -19,10 +19,11 @@ const projects = (await getCollection("work"))
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 // i18n
-import i18next, { t, changeLanguage } from "i18next";
-import { Trans, HeadHrefLangs } from "astro-i18next/components";
+import { t, changeLanguage, setDefaultNamespace } from "i18next";
 
 changeLanguage("en");
+
+setDefaultNamespace("index");
 ---
 
 <BaseLayout>
@@ -30,14 +31,14 @@ changeLanguage("en");
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Loris Alexandre"
-					tagline="I am a full-stack web developper who is currently based in Nancy, France."
+					title={t("hero.title")}
+					tagline={t("hero.tagline")}
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" />{t("site.title")}</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="code" size="1.33em" />{t("roles.code")}</Pill>
+						<Pill><Icon icon="microphone-stage" size="1.33em" /> {t("roles.mic")}</Pill>
+						<Pill><Icon icon="pencil-line" size="1.33em" /> {t("roles.pencil")}</Pill>
 					</div>
 				</Hero>
 
@@ -55,8 +56,8 @@ changeLanguage("en");
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>{t("work.title")}</h3>
+					<p>{t("work.desc")}</p>
 				</header>
 
 				<div class="gallery">
@@ -73,18 +74,17 @@ changeLanguage("en");
 
 				<div class="cta">
 					<CallToAction href="/work/">
-						View All
+						{t("work.cta")}
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
 			</section>
-
+			<!-- 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>{t("mentions.title")}</h3>
 					<p>
-						I have been fortunate enough to recieve praise for my work in several publications. Take
-						a look below to learn more.
+						{t("mentions.desc")}
 					</p>
 				</header>
 
@@ -100,6 +100,7 @@ changeLanguage("en");
 					</Grid>
 				</div>
 			</section>
+			-->
 		</main>
 
 		<ContactCTA />

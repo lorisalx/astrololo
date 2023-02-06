@@ -1,12 +1,15 @@
 ---
 import CallToAction from './CallToAction.astro';
 import Icon from './Icon.astro';
+import { t, setDefaultNamespace } from "i18next";
+
+setDefaultNamespace("globals");
 ---
 
 <aside>
-	<h2>Interested in working together?</h2>
-	<CallToAction href="mailto:me@example.com">
-		Send Me a Message
+	<h2>{t("contactcta.title")}</h2>
+	<CallToAction href="mailto:loris.alexandre@orange.fr">
+		{t("contactcta.action")}
 		<Icon icon="paper-plane-tilt" size="1.2em" />
 	</CallToAction>
 </aside>

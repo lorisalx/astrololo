@@ -1,0 +1,14 @@
+{
+  "contactcta": {
+    "title": "Interesteed in working together?",
+    "action": "Send Me a Message"
+  },
+  "footer": {
+    "technos": "Designed & Developed with <0>Astro</0>"
+  },
+  "404": {
+    "title": "Page not found",
+    "description": "404 Error — this page was not found",
+    "tagline": "Not found"
+  }
+}

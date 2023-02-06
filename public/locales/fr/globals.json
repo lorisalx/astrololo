@@ -1,0 +1,9 @@
+{
+  "contactcta": {
+    "title": "Interesteed in working together?",
+    "action": "Send Me a Message"
+  },
+  "footer": {
+    "technos": "Designed & Developed avec <0>Astro</0>"
+  }
+}

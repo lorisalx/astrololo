@@ -1,12 +1,17 @@
 ---
 import Icon from './Icon.astro';
 const currentYear = new Date().getFullYear();
+import { t, setDefaultNamespace } from "i18next";
+import { Trans } from "astro-i18next/components";
+setDefaultNamespace("globals");
 ---
 
 <footer>
 	<div class="group">
 		<p>
-			Designed & Developed with <a href="https://astro.build/">Astro</a>
+			<Trans i18nKey="footer.technos">
+				Designed & Developed with <a href="https://astro.build/">Astro</a>
+			</Trans>
 			<Icon icon="rocket-launch" size="1.2em" />
 		</p>
 		<p>&copy; {currentYear} Loris Alexandre</p>

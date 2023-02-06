@@ -1,11 +1,13 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage, setDefaultNamespace } from "i18next";
 import Hero from "../components/Hero.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 changeLanguage("en");
+
+setDefaultNamespace("globals");
 ---
 
-<BaseLayout title="Not Found" description="404 Error — this page was not found">
-	<Hero title="Page Not Found" tagline="Not found" />
+<BaseLayout title={t("404.title")} description={t("404.description")} >
+	<Hero title={t("404.title")} tagline={t("404.tagline")} />
 </BaseLayout>
