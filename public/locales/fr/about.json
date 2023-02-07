@@ -1,0 +1,28 @@
+{
+  "seo": {
+    "title": "About | Loris Alexandre",
+    "desc": "About my education, formation ..."
+  },
+  "hero": {
+    "title": "About",
+    "tagline": "Thanks for stopping by. Read below to learn more about myself and my background."
+  },  
+  "background": {
+    "title": "Background",
+    "section_one": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem.",
+    "section_two": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem.",
+    "section_three": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem."
+  },
+  "education": {
+    "title": "Education",
+    "section_one": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem.",
+    "section_two": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem.",
+    "section_three": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem."
+  },
+  "skills": {
+    "title": "Skills",
+    "section_one": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem.",
+    "section_two": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem.",
+    "section_three": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem."
+  }
+}
