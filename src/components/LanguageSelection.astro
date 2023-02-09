@@ -1,0 +1,16 @@
+---
+import i18next from "i18next";
+import { localizePath } from "astro-i18next";
+
+const currentLanguage = i18next.language;
+
+const { pathname } = Astro.url;
+
+
+const flag = (currentLanguage == "en") ? "🇫🇷" : "🇬🇧";
+
+const nextLang = (currentLanguage == "en") ? "fr" : "en";
+
+const pathValue = localizePath(pathname, nextLang);
+---
+<a href={pathValue} >{flag}</a>

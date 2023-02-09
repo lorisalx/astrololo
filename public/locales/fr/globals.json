@@ -1,9 +1,14 @@
 {
   "contactcta": {
-    "title": "Interesteed in working together?",
-    "action": "Send Me a Message"
+    "title": "Vous souhaitez que l'on travaille ensemble?",
+    "action": "Me contacter"
   },
   "footer": {
-    "technos": "Designed & Developed avec <0>Astro</0>"
+    "technos": "Pensé et développé avec <0>Astro</0>"
+  },
+  "404": {
+    "title": "Page non trouvée",
+    "description": "Erreur 404 — cette page n'est pas disponible",
+    "tagline": "Indisponible"
   }
 }

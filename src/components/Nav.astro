@@ -1,23 +1,30 @@
 ---
 import Icon, { Props as IconProps } from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
+import i18next from "i18next";
+import LanguageSelection from "./LanguageSelection.astro";
 
 /** Main menu items */
-const textLinks: { label: string; href: string }[] = [
+const textLinksEn: { label: string; href: string }[] = [
 	{ label: 'Home', href: '/' },
 	{ label: 'Work', href: '/work/' },
-	{ label: 'About', href: '/about/' },
+	{ label: 'About', href: '/about/' }
+];
+
+const textLinksFr: { label: string; href: string }[] = [
+	{ label: 'Accueil', href: '/fr/' },
+	{ label: 'Projets', href: '/fr/work/' },
+	{ label: 'Historique', href: '/fr/about/' }
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
-	{ label: 'Twitter', href: 'https://twitter.com/me', icon: 'twitter-logo' },
-	{ label: 'Twitch', href: 'https://twitch.tv/me', icon: 'twitch-logo' },
-	{ label: 'GitHub', href: 'https://github.com/me', icon: 'github-logo' },
-	{ label: 'CodePen', href: 'https://codepen.io/me', icon: 'codepen-logo' },
-	{ label: 'dribbble', href: 'https://dribbble.com/me', icon: 'dribbble-logo' },
-	{ label: 'YouTube', href: 'https://www.youtube.com/@me/', icon: 'youtube-logo' },
+	{ label: 'GitHub', href: 'https://github.com/lorisalx', icon: 'github-logo' },
+	{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/loris-alexandre/', icon: 'linkedin-logo' },
+
 ];
+
+const currentLanguage = i18next.language;
 ---
 
 <nav>
@@ -37,8 +44,8 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 	</div>
 	<div id="menu-content">
 		<ul class="nav-items">
-			{
-				textLinks.map(({ label, href }) => (
+			{ currentLanguage === "en" && (
+				textLinksEn.map(({ label, href }) => (
 					<li>
 						<a
 							aria-current={Astro.url.pathname === href}
@@ -56,7 +63,26 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 						</a>
 					</li>
 				))
-			}
+			)}
+			{ currentLanguage === "fr" && (
+			textLinksFr.map(({ label, href }) => (
+				<li>
+					<a
+						aria-current={Astro.url.pathname === href}
+						class:list={[
+							'link',
+							{
+								active:
+									Astro.url.pathname === href,
+							},
+						]}
+						href={href}
+					>
+						{label}
+					</a>
+				</li>
+			))
+		)}
 		</ul>
 		<div class="menu-footer">
 			<div class="socials">
@@ -73,6 +99,7 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 			<div class="theme-toggle">
 				<ThemeToggle />
 			</div>
+			<LanguageSelection/>
 		</div>
 	</div>
 </nav>

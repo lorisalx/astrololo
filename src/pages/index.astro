@@ -35,11 +35,6 @@ setDefaultNamespace("index");
 					tagline={t("hero.tagline")}
 					align="start"
 				>
-					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" />{t("roles.code")}</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> {t("roles.mic")}</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> {t("roles.pencil")}</Pill>
-					</div>
 				</Hero>
 
 				<img
@@ -49,8 +44,6 @@ setDefaultNamespace("index");
 					src="/assets/portrait.jpg"
 				/>
 			</header>
-
-			<Skills />
 		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
@@ -79,28 +72,6 @@ setDefaultNamespace("index");
 					</CallToAction>
 				</div>
 			</section>
-			<!-- 
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>{t("mentions.title")}</h3>
-					<p>
-						{t("mentions.desc")}
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-			</section>
-			-->
 		</main>
 
 		<ContactCTA />

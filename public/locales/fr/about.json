@@ -1,28 +1,27 @@
 {
   "seo": {
-    "title": "About | Loris Alexandre",
-    "desc": "About my education, formation ..."
+    "title": "À propos de moi | Loris Alexandre",
+    "desc": "Mon études, mon expérience professionnelle ..."
   },
   "hero": {
-    "title": "About",
-    "tagline": "Thanks for stopping by. Read below to learn more about myself and my background."
+    "title": "À propos de moi",
+    "tagline": "Lisez ci-dessous pour en savoir plus à mon propos."
   },  
   "background": {
-    "title": "Background",
-    "section_one": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem.",
-    "section_two": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem.",
-    "section_three": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem."
+    "title": "Expérience professionnelle",
+    "section_one": "Ingénieur Développement Web en alternance à Boursorama | Nancy, France | Septembre 2021 - aujourd'hui",
+    "section_two": "Développeur logiciel et web en stage à Jige International | Revigny-sur-Ornain, France | Avril - Juillet 2021",
+    "section_three": "Développeur logiciel à Jige International | Revigny-sur-Ornain, France | Juillet - Août 2020" 
   },
   "education": {
     "title": "Education",
-    "section_one": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem.",
-    "section_two": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem.",
-    "section_three": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem."
+    "section_one": "Ingénieur du numérique à Télécom Nancy, Université de Lorraine | 2021 - 2024",
+    "section_two": "DUT Informatique à l'IUT de Saint-Dié-des-Vosges, Université de Lorraine | 2019 - 2021"
   },
   "skills": {
     "title": "Skills",
-    "section_one": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem.",
-    "section_two": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem.",
-    "section_three": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt luctus, nisl nisl aliquam lorem, nec aliquam nisl nunc vel lorem."
+    "section_one": "Languages: C, C++, Java, Python, TypeScript, HTML, CSS, SQL",
+    "section_two": "Frameworks: React, Node.js, Express, Django, Flask, Bootstrap, Tailwind",
+    "section_three": "Tools: Git, Docker, Linux, Windows, Visual Studio Code, IntelliJ, Jira, Confluence"
   }
 }

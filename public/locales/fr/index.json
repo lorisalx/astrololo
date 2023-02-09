@@ -1,21 +1,14 @@
 {
   "hero": {
-    "title": "Hi, I'm Loris Alexandre !",
-    "tagline": "I am a full-stack web developper who is currently based in Nancy, France."
+    "title": "Hello, ici Loris Alexandre 👋",
+    "tagline": "Je suis un développeur web full-stack actuellement basé à Nancy, Grand Est."
   },  
   "roles": {
-    "code": "Developer",
-    "mic": "Speaker",
-    "pencil": "Writer"
+    "code": "Déveoppeur"
   },
   "work": {
-    "title": "Selected work",
-    "desc": "Take a look below at some of my featured work for clients from the past few years.",
-    "cta": "View all work"
-  },
-  "mentions": {
-    "title": "Mentions",
-    "desc": "I have been featured in the following publications.",
-    "cta": "View all mentions"
+    "title": "Mes projets",
+    "desc": "Jetez un oeil ci-dessous à certains de mes projets.",
+    "cta": "Voir tous mes projets"
   }
 }
