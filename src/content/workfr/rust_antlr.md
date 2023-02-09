@@ -1,8 +1,8 @@
 ---
 title: Rust Compiler
 publishDate: 2023-02-09 00:00:00
-img: /assets/stock-3.jpg
-img_alt: Rust Logo, Antlr Logo
+img: /assets/rustcompilerfr.png
+img_alt: Un compilateur Rust
 description: |
   Implementation of a (Mini-)Rust parser, lexer, syntaxic and semantic analyzer.
 tags:

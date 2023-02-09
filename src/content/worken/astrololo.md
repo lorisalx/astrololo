@@ -1,8 +1,8 @@
 ---
 title: AstroLolo
 publishDate: 2023-02-09 00:00:00
-img: /assets/stock-3.jpg
-img_alt: Rust Logo, Antlr Logo
+img: /assets/astrololo.png
+img_alt: My personal portfolio using Astro
 description: |
   The website you're currently visiting
 tags:

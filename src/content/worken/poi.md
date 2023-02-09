@@ -1,8 +1,8 @@
 ---
 title: POI
 publishDate: 2023-02-09 00:00:00
-img: /assets/stock-3.jpg
-img_alt: Rust Logo, Antlr Logo
+img: /assets/poi.png
+img_alt: POI, a fullstack web application to help democracy
 description: |
   Participatory democracy web application 
 tags:
