@@ -1,5 +1,5 @@
 ---
-import { t, changeLanguage, setDefaultNamespace } from "i18next";
+import i18next, { t, changeLanguage, setDefaultNamespace } from "i18next";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContactCTA from "../../components/ContactCTA.astro";
@@ -10,7 +10,9 @@ import Grid from "../../components/Grid.astro";
 changeLanguage("fr");
 
 setDefaultNamespace("work");
-const projects = (await getCollection("work")).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+const currentLanguage = i18next.language;
+const collection = (currentLanguage === "en") ? "worken" : "workfr";
+const projects = (await getCollection(collection)).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 ---
 
 <BaseLayout
