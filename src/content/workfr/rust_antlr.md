@@ -10,10 +10,8 @@ tags:
   - Java
   - Compiling
 ---
-# Rust Compiler Project
+## Rust Compiler Project
 
-The goal of this project is to create a translator for a subset of the Rust language, which we will call Mini Rust. The objective will be to write a lexical and syntax analyzer using Antlr, then a semantic analyzer, and to translate the Mini Rust code into C language. 
+Le projet est disponible sur [GitHub] (https://github.com/lorisalx/rust-compiler).
 
-This project is a group project done in Telecom Nancy, french engineering school. 
-
-The project is aviable on [GitHub](https://github.com/lorisalx/rust-compiler).
+Le but de ce projet est de créer un traducteur pour une version réduite du langage Rust, que nous appellerons Mini Rust. L’objectif sera d’écrire un analyseur lexical et syntaxique en utilisant Antlr, puis un analyseur sémantique, et de traduire le code Mini Rust en langage C. Je vous invite à lire le readme du projet pour plus d’informations.

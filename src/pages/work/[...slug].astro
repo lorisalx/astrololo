@@ -85,8 +85,12 @@ const { Content } = await entry.render();
 	}
 
 	.content {
-		max-width: 65ch;
+		max-width: 85ch;
 		margin-inline: auto;
+	}
+
+	.content :global(p) {
+		text-align: justify;
 	}
 
 	.content > :global(* + *) {
