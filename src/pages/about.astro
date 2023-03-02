@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import ContactCTA from "../components/ContactCTA.astro";
 import Hero from "../components/Hero.astro";
 import { t, changeLanguage, setDefaultNamespace } from "i18next";
+import CallToAction from "../components/CallToAction.astro";
 
 changeLanguage("en");
 
@@ -14,54 +15,12 @@ setDefaultNamespace("about");
 		<main class="wrapper about">
 			<Hero
 				title={t("hero.title")}
-				tagline={t("hero.tagline")}
 			>
 			</Hero>
 
 			<section>
-				<h2 class="section-title">{t("background.title")}</h2>
-				<div class="content">
-					<ul>
-						<li>
-							{t("background.section_one")}
-						</li>
-						<li>
-							{t("background.section_two")}
-						</li>
-						<li>
-							{t("background.section_three")}
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">{t("education.title")}</h2>
-				<div class="content">
-					<ul>
-						<li>
-							{t("education.section_one")}
-						</li>
-						<li>
-							{t("education.section_two")}
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">{t("skills.title")}</h2>
-				<div class="content">
-					<ul>
-						<li>
-							{t("skills.section_one")}
-						</li>
-						<li>
-							{t("skills.section_two")}
-						</li>
-						<li>
-							{t("skills.section_three")}
-						</li>
-					</ul>
-				</div>
+				<h2 class="section-title"></h2>
+				<CallToAction href="/ALEXANDRE_Loris_Resume.pdf">Checkout my resume</CallToAction>
 			</section>
 		</main>
 
