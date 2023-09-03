@@ -28,14 +28,20 @@ const {
 <script defer src="/_vercel/insights/script.js"></script>
 <script is:inline>
 	// This code is inlined in the head to make dark mode instant & blocking.
+	const setTheme = () => {
+		const themePreference = getThemePreference();
+		document.documentElement.classList[themePreference === 'dark' ? 'add' : 'remove']('theme-dark');
+	};
+
 	const getThemePreference = () => {
 		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
 			return localStorage.getItem('theme');
 		}
 		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 	};
-	const isDark = getThemePreference() === 'dark';
-	document.documentElement.classList[isDark ? 'add' : 'remove']('theme-dark');
+
+	// Initialize theme based on preference
+	setTheme();
 
 	if (typeof localStorage !== 'undefined') {
 		// Watch the document element and persist user preference when it changes.
@@ -45,4 +51,8 @@ const {
 		});
 		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 	}
+
+	// Add an event listener for 'astro:after-swap' if you're using Astro, just like in your first script.
+	document.addEventListener('astro:after-swap', setTheme);
 </script>
+
